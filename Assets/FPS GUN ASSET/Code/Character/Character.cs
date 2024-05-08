@@ -15,6 +15,8 @@ namespace InfimaGames.LowPolyShooterPack
 	public sealed class Character : CharacterBehaviour
 	{
 		#region FIELDS SERIALIZED
+		
+		[SerializeField] private Movement movementComponent;
 
 		[Header("Inventory")]
 		
@@ -148,6 +150,9 @@ namespace InfimaGames.LowPolyShooterPack
 		/// True if the game cursor is locked! Used when pressing "Escape" to allow developers to more easily access the editor.
 		/// </summary>
 		private bool cursorLocked;
+
+		//Jump method
+		private bool isJumping; 
 
 		#endregion
 
@@ -846,5 +851,54 @@ namespace InfimaGames.LowPolyShooterPack
 		#endregion
 
 		#endregion
+		#region FIELDS
+
+
+
+#endregion
+//Jump : 
+#region INPUT
+
+	public void OnJump(InputAction.CallbackContext context)
+{
+    // Handle input based on the phase of the input action.
+    switch (context.phase)
+    {
+        case InputActionPhase.Started:
+            // Check if the character is allowed to jump.
+            if (CanJump())
+            {
+                isJumping = true;
+                // Optionally, add force in the Rigidbody component here or manage this in the Movement class.
+            }
+            break;
+        case InputActionPhase.Canceled:
+            isJumping = false;
+            break;
+    }
+}
+
+	#endregion
+
+	#region ACTION CHECKS
+	public bool IsJumping()
+{
+    return isJumping;
+}
+
+public void ResetJump()
+{
+    isJumping = false;
+}
+
+	private bool CanJump()
+{
+    // Ensure the character is not in other states that would prevent jumping.
+     return !reloading && !holstering && !inspecting && movementComponent.IsGrounded();
+}
+
+
+#endregion
+
 	}
 }

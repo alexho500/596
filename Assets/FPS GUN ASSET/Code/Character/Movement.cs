@@ -2,6 +2,7 @@
 
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace InfimaGames.LowPolyShooterPack
 {
@@ -28,6 +29,10 @@ namespace InfimaGames.LowPolyShooterPack
         [Tooltip("How fast the player moves while running."), SerializeField]
         private float speedRunning = 9.0f;
 
+        [Header("Jump Settings")]
+        [Tooltip("The force applied when the player jumps.")]
+        [SerializeField]
+        private float jumpForce = 300f;
         #endregion
 
         #region PROPERTIES
@@ -66,7 +71,7 @@ namespace InfimaGames.LowPolyShooterPack
         /// <summary>
         /// Player Character.
         /// </summary>
-        private CharacterBehaviour playerCharacter;
+        private Character playerCharacter;
         /// <summary>
         /// The player character's equipped weapon.
         /// </summary>
@@ -87,7 +92,7 @@ namespace InfimaGames.LowPolyShooterPack
         protected override void Awake()
         {
             //Get Player Character.
-            playerCharacter = ServiceLocator.Current.Get<IGameModeService>().GetPlayerCharacter();
+            playerCharacter = ServiceLocator.Current.Get<IGameModeService>().GetPlayerCharacter() as Character;
         }
 
         /// Initializes the FpsController on start.
@@ -130,16 +135,25 @@ namespace InfimaGames.LowPolyShooterPack
             //Set grounded. Now we know for sure that we're grounded.
             grounded = true;
         }
-			
+
+		
         protected override void FixedUpdate()
         {
             //Move.
             MoveCharacter();
+
+            //Jump movement added. 
+            if (playerCharacter.IsJumping() && grounded)
+            {
+                rigidBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                grounded = false; // Prevents jumping while airborne.
+                playerCharacter.ResetJump(); // Reset the jump state.
+            }
             
             //Unground.
             grounded = false;
         }
-
+       
         /// Moves the camera to the character, processes jumping and plays sounds every frame.
         protected override  void Update()
         {
@@ -153,6 +167,9 @@ namespace InfimaGames.LowPolyShooterPack
         #endregion
 
         #region METHODS
+        #region FIELDS
+        private bool isJumping;
+        #endregion
 
         private void MoveCharacter()
         {
@@ -180,6 +197,12 @@ namespace InfimaGames.LowPolyShooterPack
             //Update Velocity.
             Velocity = new Vector3(movement.x, 0.0f, movement.z);
         }
+
+        public bool IsGrounded()
+        {
+            return grounded;
+        }
+
 
         /// <summary>
         /// Plays Footstep Sounds. This code is slightly old, so may not be great, but it functions alright-y!
