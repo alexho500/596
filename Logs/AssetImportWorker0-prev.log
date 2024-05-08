@@ -15,7 +15,7 @@ C:/Users/smash/CS596 Final/596
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50206
+55486
 Successfully changed project path to: C:/Users/smash/CS596 Final/596
 C:/Users/smash/CS596 Final/596
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/smash/CS596 Final/596
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11336] Host "[IP] 192.168.1.209 [Port] 0 [Flags] 2 [Guid] 991007979 [EditorId] 991007979 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q62LGBL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6188] Host "[IP] 192.168.1.209 [Port] 0 [Flags] 2 [Guid] 3974185861 [EditorId] 3974185861 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q62LGBL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11336] Host "[IP] 192.168.1.209 [Port] 0 [Flags] 2 [Guid] 991007979 [EditorId] 991007979 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q62LGBL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6188] Host "[IP] 192.168.1.209 [Port] 0 [Flags] 2 [Guid] 3974185861 [EditorId] 3974185861 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q62LGBL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 136.75 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 128.95 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.34f1 (25266724e7bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/Resources/UnitySubsystems
@@ -68,7 +68,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -76,7 +76,7 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.34f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.34f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.023131 seconds.
+Registered in 0.016577 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
@@ -84,90 +84,90 @@ Native extension for WindowsStandalone target not found
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 770 ms
+Android Extension - Scanning For ADB Devices 626 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 127.47 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 116.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.273 seconds
+- Completed reload, in  1.609 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2274ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (1609ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1884ms)
-			LoadAssemblies (203ms)
+		EndReloadAssembly (1343ms)
+			LoadAssemblies (134ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (287ms)
+			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (1443ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (1106ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1067ms)
+				InitializePlatformSupportModulesInManaged (814ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (128ms)
+				RefreshPlugins (116ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (85ms)
+				ProcessInitializeOnLoadAttributes (114ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016991 seconds.
+Registered in 0.014802 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 115.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 104.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  2.469 seconds
+- Completed reload, in  2.036 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2471ms)
-		BeginReloadAssembly (231ms)
+	ReloadAssembly (2037ms)
+		BeginReloadAssembly (196ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (2069ms)
-			LoadAssemblies (188ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (1700ms)
+			LoadAssemblies (153ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (467ms)
+			SetupTypeCache (387ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (99ms)
-			SetupLoadedEditorAssemblies (1247ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (1055ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (48ms)
+				InitializePlatformSupportModulesInManaged (39ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (115ms)
-				BeforeProcessingInitializeOnLoad (124ms)
-				ProcessInitializeOnLoadAttributes (898ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (761ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3846 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (46.9 KB). Loaded Objects now: 4312.
-Memory consumption went from 147.6 MB to 147.6 MB.
-Total: 13.864100 ms (FindLiveObjects: 0.607100 ms CreateObjectMapping: 0.388700 ms MarkObjects: 12.076700 ms  DeleteObjects: 0.788400 ms)
+Unloading 4124 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (93.1 KB). Loaded Objects now: 4590.
+Memory consumption went from 159.5 MB to 159.4 MB.
+Total: 9.623100 ms (FindLiveObjects: 1.338500 ms CreateObjectMapping: 0.685400 ms MarkObjects: 7.469800 ms  DeleteObjects: 0.128100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -184,129 +184,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2436.390270 seconds.
-  path: Assets/MBS/Examples/Demo Scene 2/MBSDemoSceneFloorMat2.mat
-  artifactKey: Guid(fa24a774596173249b9ea0da2447e461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 456972.661496 seconds.
+  path: Assets/Layout.prefab
+  artifactKey: Guid(ff24d9a8c70277a49a1b389da63dd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/Examples/Demo Scene 2/MBSDemoSceneFloorMat2.mat using Guid(fa24a774596173249b9ea0da2447e461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998eb817f39b48fe41f36a629df8f8ae') in 0.226008 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 19.686014 seconds.
-  path: Assets/MBS/InternalData/Materials/MBSGeneretedMeshCheckboard.mat
-  artifactKey: Guid(67b447bbef1804044989ba921be2ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/InternalData/Materials/MBSGeneretedMeshCheckboard.mat using Guid(67b447bbef1804044989ba921be2ccc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb94c736ed057359d009437d647fbffa') in 0.026047 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.731962 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_InclinedWallSolid.prefab
-  artifactKey: Guid(abdfdd2076dd40344b3d125ea2962bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_InclinedWallSolid.prefab using Guid(abdfdd2076dd40344b3d125ea2962bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c69c5fbb21a720e96abeea0b688eee1') in 0.696000 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallDoor.prefab
-  artifactKey: Guid(9b614346c6c876e49bc90b8748a9c934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallDoor.prefab using Guid(9b614346c6c876e49bc90b8748a9c934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f30e3ddcf02b31441e90f1c3c0f953') in 0.076085 seconds 
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallSolid.prefab
-  artifactKey: Guid(31f5dca4f9995fa45aecddb2054edb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallSolid.prefab using Guid(31f5dca4f9995fa45aecddb2054edb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe68eedf546c23907f67636127a8af37') in 0.054950 seconds 
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWall_Inner_Solid2.prefab
-  artifactKey: Guid(f9e3bd9086801474ca014212cdd02f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWall_Inner_Solid2.prefab using Guid(f9e3bd9086801474ca014212cdd02f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec545e89a13abc75071bc3260e55014d') in 0.069974 seconds 
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallSolidHalf.prefab
-  artifactKey: Guid(763a992ca58fddd4684bc4e19b2b8d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallSolidHalf.prefab using Guid(763a992ca58fddd4684bc4e19b2b8d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b0af4039e2b31ad1d70c75618ea7a8') in 0.078272 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallWindow.prefab
-  artifactKey: Guid(05302916337b4ad48b8482325562fd2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Second example pack/Prefabs/MBSSecondPack_StableWallWindow.prefab using Guid(05302916337b4ad48b8482325562fd2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6110646acfdb9aa11aa9fb98bde1fe71') in 0.569357 seconds 
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Import Request.
-  Time since last request: 99.843894 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack
-  artifactKey: Guid(67a0098d508e9564484e6a513c26454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack using Guid(67a0098d508e9564484e6a513c26454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e706bf5b08f22630c6440ddb2b1adbe9') in 0.018863 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.843581 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs
-  artifactKey: Guid(7db352fffa501d445a4993c06e3344e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs using Guid(7db352fffa501d445a4993c06e3344e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80ef4c28e6836a5a68df5d8861bc77d') in 0.015510 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.135490 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls
-  artifactKey: Guid(17ca0ac27dc57e3418014fb8d45b4097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls using Guid(17ca0ac27dc57e3418014fb8d45b4097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a320f98b7532416e50ba70c359333c0e') in 0.018436 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.090722 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Door_Pivot.prefab
-  artifactKey: Guid(2a54cba9195d6914ba01a3f0c88d803d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Door_Pivot.prefab using Guid(2a54cba9195d6914ba01a3f0c88d803d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1515850f7623f4019e7224ec6d83f296') in 0.881127 seconds 
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Wall_Solid.prefab
-  artifactKey: Guid(9de2496e7a5f5ae41b543330ea8dab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Wall_Solid.prefab using Guid(9de2496e7a5f5ae41b543330ea8dab15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a495dd52515f69347d8a92f0d06d244') in 0.042574 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Wall_Door.prefab
-  artifactKey: Guid(1594b6dd197757d438b22b03efd47041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Walls/MBSCoffeeShopPack_Wall_Door.prefab using Guid(1594b6dd197757d438b22b03efd47041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65249bf6ee551df3d0ecac246a79c35') in 0.051395 seconds 
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 56.558010 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Workspace/MBSCoffeeShopPack_Decorative wall.prefab
-  artifactKey: Guid(218df648df87a3641bb47f0c6656b17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Workspace/MBSCoffeeShopPack_Decorative wall.prefab using Guid(218df648df87a3641bb47f0c6656b17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3c5b3be052724040cba617b3bcdbdc') in 0.092104 seconds 
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 3.598808 seconds.
-  path: Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Additional/MBSCoffeeShopPack_Plant.prefab
-  artifactKey: Guid(e892bdb6398b7c94f8bda59417d98374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/MBS/ModularPacks/Coffee Shop Example Pack/Prefabs/Additional/MBSCoffeeShopPack_Plant.prefab using Guid(e892bdb6398b7c94f8bda59417d98374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24cd99d405ef9bd1717a30c6451abb4') in 0.088844 seconds 
-Number of asset objects unloaded after import = 11
+Start importing Assets/Layout.prefab using Guid(ff24d9a8c70277a49a1b389da63dd870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa8e5a23c03952fb78c073ac22df4bc') in 0.095013 seconds 
+Number of asset objects unloaded after import = 164

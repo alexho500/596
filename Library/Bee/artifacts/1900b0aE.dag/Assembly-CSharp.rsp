@@ -419,6 +419,7 @@
 "Assets/FPS GUN ASSET/Looping/Loops.cs"
 "Assets/FPS GUN ASSET/Looping/LoopUtilities.cs"
 "Assets/FPS GUN ASSET/Looping/RLoops.cs"
+"Assets/Health Bar/Code For Health Bar/PlayerHealth.cs"
 -langversion:9.0
 
 /deterministic
